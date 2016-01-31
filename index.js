@@ -10,7 +10,10 @@ var connection = mysql.createConnection({
             console.error('error connecting: ' + err.stack);
             return;
         };
+        console.log("yeah!");//this "yeah!" is just to test//
         //console.log('connected as id ' + connection.threadId);
     });
 
-    // var prompt = require('prompt')
+  var prompt = require('prompt');
+  prompt.start();
+  prompt.message = "";
