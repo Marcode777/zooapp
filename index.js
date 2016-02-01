@@ -17,3 +17,7 @@ var connection = mysql.createConnection({
   var prompt = require('prompt');
   prompt.start();
   prompt.message = "";
+
+  var zoo = {
+    welcome: console.log("Welcome to the Zoo and Friends App!")
+  }
