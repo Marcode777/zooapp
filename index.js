@@ -20,7 +20,10 @@ var zoo = {
         console.log("Enter (V): -----> to Visit animals in the Zoo!")
         console.log("Enter (D): -----> to Adopt an animal from the Zoo!")
         console.log("Enter (Q): -----> to Quit and exit the Zoo!")
-    } //in an object, you don't use semicolons after last property and curly bracket
+    }, //in an object, you don't use semicolons after last property and curly bracket
+  add: function() {
+    
+  }
 };
 connection.connect(function(err) {
     if (err) {
