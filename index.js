@@ -20,7 +20,8 @@ var connection = mysql.createConnection({
 
   var zoo = {
     welcome: function() {
-      console.log("Welcome to the Zoo and Friends App~!")},
+      console.log("Welcome to the Zoo and Friends App~!")
+    },
     menu: console.log("Enter (A): -----> to Add to a new animal to the Zoo!")
           console.log("Enter (U): -----> to Update info on an animal in the Zoo!")
           console.log("Enter (V): -----> to Visit animals in the Zoo!")
