@@ -35,8 +35,9 @@ var zoo = {
                                 throw err
                             }
                             console.log(result.name + "is in the zoo with the animals!");
-                        },
-                        currentScope.menu(); currentScope.promptUser();
+                        })
+                    },
+                        //currentScope.menu(); currentScope.promptUser();
 
                         visit: function() {
                             console.log("Enter (I):---> do you know the animal by its ID? We will visit that animal!")
@@ -48,6 +49,8 @@ var zoo = {
 
                             currentScope.visit();
                             currentScope.view();
+                        },
+                    }
 
 
 
