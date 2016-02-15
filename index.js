@@ -54,9 +54,28 @@ var zoo = {
 
                         view: function(){
                             var currentScope = input_scope;
-                            console.log('Please choose what you would like to visit.')
+                            console.log('Please choose what you would like to visit.');
+                            prompt.get(['---> visit'], function(err, result) {
+                                if (result.visit === "Q"){
+                                    currentScope.menu();
+                                } else if( result.visit === "O"){
+                                    currentScope.type(input_scope);
+                                } else if( result.visit === "I"){
+                                    currentScope.type(input_scope);
+                                } else if( result.visit === "N"){
+                                    currentScope.name(input_scope);
+                                } else if( result.visit === "A"){
+                                    currentScope.all(input_scope);
+                                } else if( result.visit === "C"){
+                                    currentScope.care(input_scope);
+                                } else{
+                                    console.log("Apologies, that was not understood. Please try again.");
+                                }
+                                
 
-                        }
+                                });
+                            }
+
                     
 
                     }//this is the ending cap curly bracket to finish the whole zoo object
