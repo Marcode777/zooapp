@@ -30,14 +30,15 @@ var zoo = {
                     var newAnimal = [result.caretaker_ID, result.name, result.type, result.age]
                     console.log('Your full name is ' + result.first_name + ' ' + result.last_name);
                 });
-                connection.query(query, newAnimal, function(err, res) {
+                    connection.query(query, newAnimal, function(err, res) {
                             if (err) {
                                 throw err
                             }
                             console.log(result.name + "is in the zoo with the animals!");
+                            currentScope.menu(); currentScope.promptUser();
                         })
                     },
-                        //currentScope.menu(); currentScope.promptUser();
+                        
 
                         visit: function() {
                             console.log("Enter (I):---> do you know the animal by its ID? We will visit that animal!")
@@ -50,7 +51,15 @@ var zoo = {
                             currentScope.visit();
                             currentScope.view();
                         },
-                    }
+
+                        view: function(){
+                            var currentScope = input_scope;
+                            console.log('Please choose what you would like to visit.')
+
+                        }
+                    
+
+                    }//this is the ending cap curly bracket to finish the whole zoo object
 
 
 
